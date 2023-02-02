@@ -9,16 +9,10 @@
 
     <TabBar>
         <Tab x:Name="HomeTab" Title="Home">
-            <ShellContent
-                ContentTemplate="{DataTemplate views:HomePage}"
-                Icon="home.png"
-                Route="home" />
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}" Route="home" />
         </Tab>
         <Tab x:Name="SectionsTab">
-            <ShellContent
-                ContentTemplate="{DataTemplate views:SectionPage}"
-                Icon="categories.png"
-                Route="sections" />
+            <ShellContent ContentTemplate="{DataTemplate views:SectionPage}" Route="sections" />
         </Tab>
         <Tab x:Name="BookmarksTab">
             <ShellContent ContentTemplate="{DataTemplate views:BookmarkPage}" Route="bookmarks" />
