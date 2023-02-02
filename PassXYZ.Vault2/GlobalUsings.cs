@@ -1,0 +1,17 @@
+﻿global using Microsoft.AppCenter;
+global using Microsoft.AppCenter.Analytics;
+global using Microsoft.AppCenter.Crashes;
+global using PassXYZ.Vault2.Models;
+global using PassXYZ.Vault2.Services;
+global using CommunityToolkit.Maui;
+global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using PassXYZ.Vault2.ViewModels;
+global using PassXYZ.Vault2.Views;
+global using System.Collections.ObjectModel;
+global using System.ComponentModel;
+global using System.Diagnostics;
+global using System.Globalization;
+global using System.Runtime.CompilerServices;
+global using System.Text.Json;
+global using System.Threading.Tasks;
