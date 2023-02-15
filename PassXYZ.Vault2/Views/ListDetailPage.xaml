@@ -5,18 +5,19 @@
 			 xmlns:m="clr-namespace:PassXYZ.Vault2.Models"
 			 x:Class="PassXYZ.Vault2.Views.ListDetailPage"
 			 x:DataType="vm:ListDetailViewModel">
-	<RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
-		<CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
-			<CollectionView.ItemTemplate>
-				<DataTemplate x:DataType="m:SampleItem">
-					<Frame Margin="4" Padding="12">
-						<Frame.GestureRecognizers>
-							<TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListDetailViewModel}}, Path=GoToDetailsCommand}" CommandParameter="{Binding .}" />
-						</Frame.GestureRecognizers>
-						<Label Text="{Binding Title}" FontSize="Large" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
-					</Frame>
-				</DataTemplate>
-			</CollectionView.ItemTemplate>
-		</CollectionView>
-	</RefreshView>
+    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
+        <CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="m:SampleItem">
+                    <Frame Margin="4" Padding="12">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListDetailViewModel}}, Path=GoToDetailsCommand}" 
+                                                  CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+                        <Label Text="{Binding Title}" FontSize="Large" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </RefreshView>
 </ContentPage>
