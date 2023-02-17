@@ -7,6 +7,7 @@
     xmlns:views="clr-namespace:NewsAppMaui.Views"
     Shell.FlyoutBehavior="Disabled">
 
+    
     <TabBar>
         <Tab x:Name="HomeTab" Title="Home">
             <ShellContent ContentTemplate="{DataTemplate views:HomePage}" Route="home" />
