@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel.Syndication;
 using System.Text;
-using System.Threading.Tasks;
-using ThreadNetwork;
+using System.Threading.Tasks; 
 
 namespace NewsAppMaui.Services
 {
@@ -45,32 +44,32 @@ namespace NewsAppMaui.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<SyndicationItem>> GetBookmarkedArticles()
+        Task<IEnumerable<Article>> INewsService.GetBookmarkedArticles()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<Category>> GetCategories()
+        Task<IEnumerable<Category>> INewsService.GetCategories()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<Article>> GetLatestArticles()
+        Task<IEnumerable<Article>> INewsService.GetLatestArticles()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<Article>> GetPopularArticles()
+        Task<IEnumerable<Article>> INewsService.GetPopularArticles()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<Article>> GetRecommendedArticles()
+        Task<IEnumerable<Article>> INewsService.GetRecommendedArticles()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<string>> GetTags()
+        Task<IEnumerable<string>> INewsService.GetTags()
         {
             throw new NotImplementedException();
         }
