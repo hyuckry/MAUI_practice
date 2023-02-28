@@ -1,4 +1,5 @@
-﻿using NewsAppMaui.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using NewsAppMaui.Models;
 using NewsAppMaui.Services;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NewsAppMaui.ViewModels
 {
-    public class HomeViewModel
+    public class HomeViewModel : ObservableObject
     {
         public HomeViewModel(INewsService news)
         {
