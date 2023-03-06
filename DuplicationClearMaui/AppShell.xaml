@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DuplicationClearMaui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DuplicationClearMaui"
+    xmlns:view="clr-namespace:DuplicationClearMaui.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+            Title="Search Location"
+            ContentTemplate="{DataTemplate view:SelectLocationPage}"
+            Route="SelectLocationPage" />
+        <ShellContent
+            Title="Options"
+            ContentTemplate="{DataTemplate view:OptionPage}"
+            Route="OptionPage" />
+        <ShellContent
+            Title="Search Results"
+            ContentTemplate="{DataTemplate view:SearchResultPage}"
+            Route="SearchResultPage" />
+    </TabBar>
+
+</Shell>
