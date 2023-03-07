@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsAppMaui", "NewsAppMaui.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsApiTest", "..\NewsApiTest\NewsApiTest.csproj", "{B39113B2-313E-4B66-A0D0-0854ED80CCA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookFinder", "..\BookFinder\BookFinder.csproj", "{2EA92677-AF83-4C3A-89FD-22B12ACAE4D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookFinder", "..\BookFinder\BookFinder.csproj", "{2EA92677-AF83-4C3A-89FD-22B12ACAE4D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "..\WeatherApp\WeatherApp.csproj", "{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,12 @@ Global
 		{2EA92677-AF83-4C3A-89FD-22B12ACAE4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA92677-AF83-4C3A-89FD-22B12ACAE4D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EA92677-AF83-4C3A-89FD-22B12ACAE4D8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3ABDB3-A21B-4A2D-8E79-82B59895DC37}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
