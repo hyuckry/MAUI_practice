@@ -5,6 +5,13 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DuplicationClearMaui", "DuplicationClearMaui.csproj", "{B10D9E1F-5846-4E50-A61A-9BEF9C28ED98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DupFinder.Core", "..\DupFinder.Core\DupFinder.Core.csproj", "{6362FA52-F85F-4764-A84F-47173BEF83DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{23B236D9-5BF5-4567-847F-242E12BB5528}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +24,10 @@ Global
 		{B10D9E1F-5846-4E50-A61A-9BEF9C28ED98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B10D9E1F-5846-4E50-A61A-9BEF9C28ED98}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B10D9E1F-5846-4E50-A61A-9BEF9C28ED98}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6362FA52-F85F-4764-A84F-47173BEF83DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6362FA52-F85F-4764-A84F-47173BEF83DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6362FA52-F85F-4764-A84F-47173BEF83DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6362FA52-F85F-4764-A84F-47173BEF83DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
