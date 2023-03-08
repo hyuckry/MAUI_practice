@@ -1,10 +1,26 @@
 ﻿using Microsoft.Data.Sqlite;
+using SQLite;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Text;
 
 namespace DupFinder.Core
 {
+    public static class Constants
+    {
+        public const string DatabaseFilename = "TodoSQLite.db3";
+
+        public const SQLite.SQLiteOpenFlags Flags =
+            // open the database in read/write mode
+            SQLite.SQLiteOpenFlags.ReadWrite |
+            // create the database if it doesn't exist
+            SQLite.SQLiteOpenFlags.Create |
+            // enable multi-threaded database access
+            SQLite.SQLiteOpenFlags.SharedCache;
+
+        public static string DatabasePath =>
+            Path.Combine(FileSystem.AppDataDirectory, DatabaseFilename);
+    }
     /// <summary>
     /// This file processor class finds duplicates by
     /// noting all groups of files with the same length
@@ -75,7 +91,7 @@ namespace DupFinder.Core
         #region Instance variables
 
         public string? databaseFile = null; // Fully qualified pathname of the SQLite database file
-        private SqliteConnection? databaseConnection = null;
+        private SQLiteAsyncConnection? databaseConnection = null;
 
         #endregion
 
