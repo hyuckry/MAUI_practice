@@ -74,7 +74,7 @@ namespace DupFinder.Core
 
         #region Instance variables
 
-        private string? databaseFile = null; // Fully qualified pathname of the SQLite database file
+        public string? databaseFile = null; // Fully qualified pathname of the SQLite database file
         private SqliteConnection? databaseConnection = null;
 
         #endregion
@@ -155,7 +155,7 @@ namespace DupFinder.Core
                     this.databaseFile = databaseFilePath;
                 }
                 File.Delete(databaseFilePath);
-                string connectString = string.Format("Data Source={0}; Version=3", databaseFilePath);
+                string connectString = string.Format("Data Source={0}", databaseFilePath);
                 this.databaseConnection = new SqliteConnection(connectString);
                 this.databaseConnection.Open();
                 PerformanceTweaks(this.databaseConnection);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,22 @@ using System.Threading.Tasks;
 
 namespace DuplicationClearMaui.Models
 {
-    internal class Folder
+    public class FolderItem
     {
+        [PrimaryKey, Indexed]
+        public string FilePath { get; set; }
+    }
+
+    public class FileItem
+    {
+        [Indexed]
+        public string FileName { get; set; }
+        [Indexed]
+        public long FileSize { get; set; }
+        [PrimaryKey, Indexed]
+        public string FilePath { get; set; }
+        [Indexed]
+        public string FileHash { get; set; }
     }
 
     public class FileDetails
