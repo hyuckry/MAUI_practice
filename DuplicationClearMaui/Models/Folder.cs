@@ -13,18 +13,6 @@ namespace DuplicationClearMaui.Models
         public string FilePath { get; set; }
     }
 
-    public class FileItem
-    {
-        [Indexed]
-        public string FileName { get; set; }
-        [Indexed]
-        public long FileSize { get; set; }
-        [PrimaryKey, Indexed]
-        public string FilePath { get; set; }
-        [Indexed]
-        public string FileHash { get; set; }
-    }
-
     public class FileDetails
     {
         public FileDetails(string filename, long size, DateTimeOffset timestamp, ulong hash = 0)
