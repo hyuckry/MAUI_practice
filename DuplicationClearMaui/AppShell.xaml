@@ -48,23 +48,6 @@
         </Style>
     </Shell.Resources>
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="animals">
-        <Tab
-            Title="Domestic"
-            Icon="paw.png"
-            Route="domestic">
-            <ShellContent
-                Title="Cats"
-                ContentTemplate="{DataTemplate views:CatsPage}"
-                Icon="cat.png"
-                Route="cats"
-                Style="{StaticResource DomesticShell}" />
-            <ShellContent
-                Title="Dogs"
-                ContentTemplate="{DataTemplate views:DogsPage}"
-                Icon="dog.png"
-                Route="dogs"
-                Style="{StaticResource DomesticShell}" />
-        </Tab>
 
         <!--
             Shell has implicit conversion operators that enable the Shell visual hierarchy to be simplified.
@@ -76,16 +59,16 @@
             this code is valid and does build.
         -->
         <ShellContent
-            Title="Monkeys"
-            ContentTemplate="{DataTemplate views:MonkeysPage}"
+            Title="검색 폴더 선택"
+            ContentTemplate="{DataTemplate views:SelectLocationPage}"
             Icon="monkey.png"
-            Route="monkeys"
+            Route="SelectLocationPage"
             Style="{StaticResource MonkeysShell}" />
         <ShellContent
-            Title="Elephants"
-            ContentTemplate="{DataTemplate views:ElephantsPage}"
+            Title="검색 결과"
+            ContentTemplate="{DataTemplate views:SearchResultPage}"
             Icon="elephant.png"
-            Route="elephants"
+            Route="SearchResultPage"
             Style="{StaticResource ElephantsShell}" />
         <ShellContent
             Title="Bears"

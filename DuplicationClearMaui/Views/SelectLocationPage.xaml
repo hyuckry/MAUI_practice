@@ -7,13 +7,22 @@
     <VerticalStackLayout>
         <Label
             HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
+            Text="Selected Folders"
             VerticalOptions="Center" />
-        <ListView ItemsSource="{Binding Monkeys}">
+        <Button Text="검색" Command="{Binding DeleteCommand}"></Button>
+
+        <ListView  x:Name="listView" ItemsSource="{Binding SelectFolders}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10">
+                        <ViewCell.ContextActions> 
+                            <MenuItem Text="Delete" 
+                                      IconImageSource="delete.png"
+                                      Command="{Binding Source={x:Reference listView}, Path=BindingContext.DeleteCommand}"
+                                      CommandParameter="{Binding}" />
+                        </ViewCell.ContextActions>
+                        
+                        <Grid Padding="3" BackgroundColor="Blue">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
@@ -22,16 +31,10 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <Image
-                                Grid.RowSpan="2"
-                                Aspect="AspectFill"
-                                HeightRequest="60"
-                                Source="{Binding ImageUrl}"
-                                WidthRequest="60" />
                             <Label
                                 Grid.Column="1"
                                 FontAttributes="Bold"
-                                Text="{Binding Name}" />
+                                Text="{Binding}" />
                             <Label
                                 Grid.Row="1"
                                 Grid.Column="1"

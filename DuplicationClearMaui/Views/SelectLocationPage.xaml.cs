@@ -1,3 +1,5 @@
+using DuplicationClearMaui.ViewModels;
+
 namespace DuplicationClearMaui.Views;
 
 public partial class SelectLocationPage : ContentPage
@@ -5,5 +7,6 @@ public partial class SelectLocationPage : ContentPage
 	public SelectLocationPage()
 	{
 		InitializeComponent();
+		BindingContext = new SelectLocationVM();
 	}
 }
