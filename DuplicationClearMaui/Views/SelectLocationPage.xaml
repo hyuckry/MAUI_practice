@@ -7,9 +7,9 @@
     <VerticalStackLayout>
         <Label
             HorizontalOptions="Center"
-            Text="Selected Folders"
+            Text="Search Folders"
             VerticalOptions="Center" />
-        <Button Text="검색" Command="{Binding DeleteCommand}"></Button>
+        <Button Text="검색" Command="{Binding SearchCommand}"></Button>
 
         <ListView  x:Name="listView" ItemsSource="{Binding SelectFolders}">
             <ListView.ItemTemplate>

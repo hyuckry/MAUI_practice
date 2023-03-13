@@ -80,6 +80,12 @@ namespace DuplicationClearMaui.ViewModels
 
         #region Command
         public ICommand DeleteCommand => new Command<string>(DeleteFolder);
+        public ICommand SearchCommand => new Command(SearchSubFolder);
+
+        private void SearchSubFolder(object obj)
+        {
+            throw new NotImplementedException();
+        }
 
         private void DeleteFolder(string obj)
         {
