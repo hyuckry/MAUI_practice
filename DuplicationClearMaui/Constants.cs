@@ -3,6 +3,7 @@
 public static class Constants
 {
     public const string DatabaseFilename = "FileFindSQLite.db3";
+    public const string sfLic = "MTM0MDc5OEAzMjMwMmUzNDJlMzBtV2JUbTNISy9za3AzVGlBLzFVTG12Z2pwME9HOFd4cUdrVTNCSW9URmhNPQ==";
 
     public const SQLite.SQLiteOpenFlags Flags =
         // open the database in read/write mode

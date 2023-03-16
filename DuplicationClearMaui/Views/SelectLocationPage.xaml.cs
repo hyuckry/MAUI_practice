@@ -4,9 +4,9 @@ namespace DuplicationClearMaui.Views;
 
 public partial class SelectLocationPage : ContentPage
 {
-	public SelectLocationPage()
+	public SelectLocationPage(SelectLocationVM vm)
 	{
 		InitializeComponent();
-		BindingContext = new SelectLocationVM();
+		BindingContext = vm;
 	}
 }

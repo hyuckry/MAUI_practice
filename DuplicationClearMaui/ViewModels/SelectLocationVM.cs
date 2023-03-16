@@ -9,10 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Maui.Controls;
+using DuplicationClearMaui.Views;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace DuplicationClearMaui.ViewModels
 {
-    public class SelectLocationVM : INotifyPropertyChanged, IQueryAttributable
+
+    public partial class SelectLocationVM : INotifyPropertyChanged, IQueryAttributable
     { 
 
         readonly IList<string> source;
@@ -82,9 +86,10 @@ namespace DuplicationClearMaui.ViewModels
         public ICommand DeleteCommand => new Command<string>(DeleteFolder);
         public ICommand SearchCommand => new Command(SearchSubFolder);
 
-        private void SearchSubFolder(object obj)
+        [RelayCommand]
+        private async void SearchSubFolder(object obj)
         {
-            throw new NotImplementedException();
+            await Shell.Current.GoToAsync($"{nameof(SearchResultPage)}",true);
         }
 
         private void DeleteFolder(string obj)
